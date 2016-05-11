@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Dialog Header -->
+    <TextView android:id="@+id/header_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:text="Sign In" />
+
+    <!-- Username -->
+    <TextView android:id="@+id/text_sign_in_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_sign_in"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="Username: " />
+
+    <EditText android:id="@+id/input_sign_in_username"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@id/text_sign_in_username"
+        android:layout_toEndOf="@id/text_sign_in_username"
+        android:background="@color/light_gray" />
+
+    <!-- Password -->
+    <TextView android:id="@+id/text_sign_in_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_sign_in_username"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="Password: " />
+
+    <EditText android:id="@+id/input_sign_in_password"
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@id/text_sign_in_password"
+        android:layout_toEndOf="@id/text_sign_in_password"
+        android:background="@color/light_gray" />
+
+    <!-- Submit -->
+    <Button android:id="@+id/sign_in_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/text_sign_in_password"
+        android:layout_centerHorizontal="true"
+        android:text="Submit" />
+
+</RelativeLayout>

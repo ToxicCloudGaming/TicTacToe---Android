@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout tools:context="org.toxiccloudgaming.tictactoe.MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Username Text UI -->
+    <RelativeLayout android:id="@+id/username_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" >
+
+        <TextView android:id="@+id/text_static_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Signed in as " />
+
+        <TextView android:id="@+id/text_ui_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/text_static_username"
+            android:textColor="@color/gray"
+            android:text="N/A" />
+
+    </RelativeLayout>
+
+    <!-- Connection Status Text UI -->
+    <RelativeLayout android:id="@+id/status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username_layout"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" >
+
+        <!-- Connection Status -->
+        <TextView android:id="@+id/text_static_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Server status: " />
+
+        <TextView android:id="@+id/text_ui_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/text_static_status"
+            android:textColor="@color/red"
+            android:text="disconnected" />
+
+        <!-- Connection Ping -->
+        <Space android:id="@+id/text_space_ping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView android:id="@+id/text_static_ping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_toEndOf="@id/text_space_ping"
+            android:gravity="center_horizontal"
+            android:text="Ping: " />
+
+        <TextView android:id="@+id/text_ui_ping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/text_static_ping"
+            android:textColor="@color/gray"
+            android:text="---" />
+
+    </RelativeLayout>
+
+    <!-- Tic-Tac-Toe Play Grid -->
+    <GridView android:id="@+id/play_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_layout"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:numColumns="3"
+        android:background="@drawable/play_grid_background"
+        android:descendantFocusability="blocksDescendants" />
+
+    <!-- Tic-Tac-Toe Player Status -->
+    <TextView android:id="@+id/play_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play_grid"
+        android:padding="10dp"
+        android:paddingTop="0dp"
+        android:textAlignment="center" />
+
+</RelativeLayout>

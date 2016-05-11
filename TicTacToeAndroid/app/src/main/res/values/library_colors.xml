@@ -1,0 +1,35 @@
+<resources>
+    <!--
+        'library_colors.xml' contains a common list of color values used in TCG applications.
+    -->
+
+    <!-- Grayscale -->
+    <color name="white">#ffffff</color>
+    <color name="very_light_gray">#dfdfdf</color>
+    <color name="light_gray">#bfbfbf</color>
+    <color name="gray">#7f7f7f</color>
+    <color name="dark_gray">#3f3f3f</color>
+    <color name="very_dark_gray">#1f1f1f</color>
+    <color name="black">#000000</color>
+
+    <!-- Primary/Secondary -->
+    <color name="red">#7f0000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="magenta">#ff00ff</color>
+    <color name="cyan">#00ffff</color>
+    <color name="yellow">#ffff00</color>
+
+    <!-- Tertiary -->
+    <color name="violet">#7f00ff</color>
+    <color name="orange">#ff7f00</color>
+    <color name="hot_pink">#ff007f</color>
+    <color name="tert1">#7fff00</color>
+    <color name="tert2">#007fff</color>
+    <color name="tert3">#00ff7f</color>
+
+    <!-- Other -->
+    <color name="olive_green">#7f7f00</color>
+    <color name="sky_blue">#ff7f7f</color>
+    <color name="dark_red">#ff69b4</color>
+</resources>

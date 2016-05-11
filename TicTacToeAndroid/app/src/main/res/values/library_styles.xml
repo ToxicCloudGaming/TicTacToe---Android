@@ -1,0 +1,12 @@
+<resources>
+    <!--
+        'library_styles.xml' contains a common list of styles used in TCG applications.
+    -->
+
+    <!-- Main Style used for activities -->
+    <style name="style_main" parent="AppTheme">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+</resources>

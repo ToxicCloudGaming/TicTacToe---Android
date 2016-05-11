@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- A button on the Tic-Tac-Toe play board -->
+    <TextView android:id="@+id/play_tile"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:textColor="@drawable/play_tile_textcolor"
+        android:background="@drawable/play_tile_background"
+        android:focusable="false" />
+
+</RelativeLayout>

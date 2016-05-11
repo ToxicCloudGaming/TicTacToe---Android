@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu tools:context="org.toxiccloudgaming.tictactoe.MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <!-- Cancel: stop looking for new game -->
+    <item android:id="@+id/action_cancel"
+        android:title="Cancel"
+        app:showAsAction="never" />
+
+    <!-- Find Game: find a new game -->
+    <item android:id="@+id/action_find_game"
+        android:title="Find Game"
+        app:showAsAction="never" />
+
+    <!-- Leave Game: leave the current game -->
+    <item android:id="@+id/action_leave_game"
+        android:title="Leave Game"
+        app:showAsAction="never" />
+
+    <!-- Settings: change application configurations -->
+    <item android:id="@+id/action_settings"
+        android:title="Settings"
+        app:showAsAction="never" />
+
+    <!-- Sign In: sign in with username/password -->
+    <item android:id="@+id/action_sign_in"
+        android:title="Sign In"
+        app:showAsAction="never" />
+
+    <!-- Sign Out: sign out if signed in -->
+    <item android:id="@+id/action_sign_out"
+        android:title="Sign Out"
+        app:showAsAction="never" />
+
+    <!-- About: display basic application information -->
+    <item android:id="@+id/action_about"
+        android:title="About"
+        app:showAsAction="never" />
+
+</menu>

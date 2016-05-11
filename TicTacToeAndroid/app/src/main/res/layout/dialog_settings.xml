@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- Dialog Header -->
+    <TextView android:id="@+id/header_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:text="Settings" />
+
+    <!-- Server Ip -->
+    <TextView android:id="@+id/text_settings_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_settings"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="Server IP: " />
+
+    <EditText android:id="@+id/input_settings_ip"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_alignTop="@id/text_settings_ip"
+        android:layout_toEndOf="@id/text_settings_ip"
+        android:background="@color/light_gray" />
+
+    <!-- Buttons -->
+    <Button android:id="@+id/settings_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/text_settings_ip"
+        android:layout_centerHorizontal="true"
+        android:text="Reset" />
+
+    <Button android:id="@+id/settings_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_alignTop="@id/settings_reset"
+        android:layout_toStartOf="@id/settings_reset"
+        android:text="Apply" />
+
+    <Button android:id="@+id/settings_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_alignTop="@id/settings_reset"
+        android:layout_toEndOf="@+id/settings_reset"
+        android:text="OK" />
+
+</RelativeLayout>

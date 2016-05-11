@@ -1,0 +1,11 @@
+<resources>
+    <!--
+        'about.xml' contains basic application info. Modify for each application.
+    -->
+
+    <string name="app_name">TicTacToe</string>
+    <string name="app_version">0.8.9</string>
+    <string name="app_version_date">April 30, 2016</string>
+    <string name="app_dev_name">Beau Hottovy</string>
+    <string name="app_website_url">http://www.toxiccloudgaming.org</string>
+</resources>
